@@ -11,8 +11,8 @@ def extract_number(filename):
     else:
         return None
     
-def missing_data(folder_path):
-
+def missing_data(folder_path:str) -> list:
+    """Freq"""
     file_list = glob.glob(f"{folder_path}/*.txt")
 
     results = []
